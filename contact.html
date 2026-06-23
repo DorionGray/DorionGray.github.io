@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — In Vivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chango&family=Chewy&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylescontact.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><sup>In</sup>Vivo</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hb hb1"></div>
+    <div class="hb hb2"></div>
+    <div class="hb hb3"></div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">// INITIATE CONTACT SEQUENCE</div>
+      <h1 class="hero-title">Say hello.<br><em>I don't bite.</em></h1>
+      <p class="hero-sub">Unlike some of the organisms I write about.</p>
+      <div class="hero-badge">⚗️ All messages handled with lab-grade care</div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <!-- SPECIMEN COLLECTION -->
+    <div class="collection-label">
+      <span>Specimen Collection — Contact Channels</span>
+    </div>
+
+    <div class="specimens">
+
+      <a href="mailto:matias.joao.maria@gmail.com" class="specimen email">
+        <div class="specimen-num">SP-001</div>
+        <div class="specimen-icon">✉️</div>
+        <div class="specimen-name">Electronic Mail</div>
+        <div class="specimen-latin">matias.joao.maria<br>@gmail.com</div>
+        <span class="specimen-tag">Preferred</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/maria-joão-matias-480b58301" target="_blank" class="specimen linkedin">
+        <div class="specimen-num">SP-002</div>
+        <div class="specimen-icon">💼</div>
+        <div class="specimen-name">LinkedIn</div>
+        <div class="specimen-latin">maria-joão-matias</div>
+        <span class="specimen-tag">Professional</span>
+      </a>
+
+      <a href="" target="_blank" class="specimen discord">
+        <div class="specimen-num">SP-003</div>
+        <div class="specimen-icon">🎮</div>
+        <div class="specimen-name">Discord</div>
+        <div class="specimen-latin">#jtpsn</div>
+        <span class="specimen-tag">Contact</span>
+      </a>
+
+      <a href="https://trufflers.github.io/stem-magazine/" target="_blank" class="specimen magazine">
+        <div class="specimen-num">SP-004</div>
+        <div class="specimen-icon">📅</div>
+        <div class="specimen-name">Calendly</div>
+        <div class="specimen-latin">Schedule directly<br>or collaborate</div>
+        <span class="specimen-tag">Meeting</span>
+      </a>
+
+      <a href="#form" class="specimen form">
+        <div class="specimen-num">SP-005</div>
+        <div class="specimen-icon">📋</div>
+        <div class="specimen-name">Lab Form</div>
+        <div class="specimen-latin">Fill in the<br>field notes below</div>
+        <span class="specimen-tag">Any reason</span>
+      </a>
+
+    </div>
+
+    <!-- LAB NOTEBOOK FORM -->
+    <div class="collection-label" id="form">
+      <span>Field Notes — Leave a Message</span>
+    </div>
+
+    <div class="notebook">
+      <div class="notebook-header">
+        <div class="notebook-title">📓 Field Notes — Incoming</div>
+        <div class="notebook-meta">
+          REF: CONTACT-2026<br>
+          STATUS: OPEN
+        </div>
+      </div>
+
+      <div class="notebook-body" id="form-body">
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+          <div class="form-row two">
+            <div>
+              <label class="field-label" for="name">Your name</label>
+              <span class="field-sublabel">(scientific or common name accepted)</span>
+              <input type="text" id="name" name="name" placeholder="e.g. Homo sapiens" required />
+            </div>
+            <div>
+              <label class="field-label" for="email">Your email</label>
+              <span class="field-sublabel">(for response delivery)</span>
+              <input type="email" id="email" name="email" placeholder="you@somewhere.com" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="field-label" for="subject">Subject of inquiry</label>
+            <span class="field-sublabel">(what brings you here?)</span>
+            <select id="subject" name="subject">
+              <option value="">— Select a subject —</option>
+              <option value="collab">🤝 Collaboration or project</option>
+              <option value="blog">📝 Something I wrote</option>
+              <option value="research">🔬 Research / science chat</option>
+              <option value="just-hello">👋 Just saying hello</option>
+              <option value="other">🧬 Other (field notes below)</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label class="field-label" for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Write freely. There's no word count here — unlike my essays." required></textarea>
+          </div>
+
+          <hr class="form-divider" />
+
+          <div class="form-footer">
+            <div class="form-note">All entries are read by a real human!</div>
+            <button type="submit" class="submit-btn">
+              Send tcontact →
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="success-msg" id="success-msg">
+        <div class="success-icon">🧪</div>
+        <div class="success-title">Sample received!</div>
+        <div class="success-note">Your message is now incubating.<br>I'll get back to you shortly.</div>
+      </div>
+    </div>
+
+    <!-- RESPONSE TIME -->
+    <div class="response-strip">
+      <div class="response-icon">⏱️</div>
+      <div class="response-text">
+        <strong>Expected response time</strong>
+        Usually within 48 hours! 
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p>InVivo · 2026</p>
+      <ul class="footer-links">
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Magazine</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const formBody = document.getElementById('form-body');
+    const successMsg = document.getElementById('success-msg');
+
+    // For demo: intercept submit and show success state
+    // In production, remove this and let Formspree handle it
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      formBody.classList.add('hide');
+      successMsg.classList.add('show');
+    });
+  </script>
+
+</body>
+</html>
